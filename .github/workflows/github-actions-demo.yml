@@ -5,5 +5,7 @@ jobs:
     runs-on: macOS
     steps:
       - uses: actions/checkout@v3
-      - run: npm install && npm run build
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16'
       - uses: ./.github/actions/javascript
