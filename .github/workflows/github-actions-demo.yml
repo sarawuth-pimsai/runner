@@ -6,6 +6,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: |
-        npm install
-        npm run build
+          npm install \
+          npm run build
       - uses: ./.github/actions/javascript
